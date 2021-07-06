@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ***************TEMP************ */
+.hero-image {
+  width: 64em;
+}
+
+.testimonial {
+  border: 2px solid blue;
+}
+
+.testimonial__card {
+  border: 2px solid red;
+}
+
+img {
+  border: 2px solid green;
+}
+
+/* UTILITY */
+.wrapper {
+  max-width: 80%;
+  margin: auto;
+}
+/* HERO */
+
+/* SERVICES */
+
+.services img {
+  max-width: 250px;
+}
+
+/* TESTIMONIAL */
+
+.testimonial__card {
+}
