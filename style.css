@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
+
+/* FONT RULES */
+font-family: 'Open Sans', sans-serif;
+font-family: 'Source Serif Pro', serif;
+
 *,
 *::before,
 *::after {
@@ -12,12 +18,36 @@ html {
 
 html,
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+:root {
+  --light-white: #e8f1f2;
+  --med-brwn: #713f24;
+  --med-grn: #47624f;
+  --gold: #b39c4d;
+  --drk-grn: #132a13;
 }
 
 /* ***************TEMP************ */
@@ -42,7 +72,73 @@ img {
   max-width: 80%;
   margin: auto;
 }
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--drk-grn);
+  color: white;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  padding: 0.75em 0 0.75em 0.75em;
+}
+
+.header__title h1 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.8rem;
+}
+
+.header__title h2 {
+  font-size: 1rem;
+}
+
+.header__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40%;
+  padding: 0.75em 0.75em 0.75em 0;
+}
+
 /* HERO */
+
+.hero {
+  position: relative;
+  background-image: ;
+  background-color: rgba(0, 0, 0, 0.507);
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#00000073),
+      to(#0000008e)
+    ),
+    url(./images/rulers.jpg);
+  background: -o-linear-gradient(#00000073, #0000008e), url(./images/rulers.jpg);
+  background: linear-gradient(#00000073, #0000008e), url(./images/rulers.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 10%;
+  right: 3%;
+  color: var(--gold);
+}
 
 /* SERVICES */
 
