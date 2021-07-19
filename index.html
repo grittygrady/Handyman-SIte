@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/6014e7f866.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   </head>
   <body>
     <header class="header">
@@ -106,7 +107,8 @@
                 </div>
               </div>
           </section>
-          <section class="testimonial">
+          <!-- OLD TESTIMONIAL LAYOUT - MAYBE DISPLAY NONE ON MOBILE BUT USE THIS IN PLACE OF CAROUSEL ON DESKTOP -->
+          <!-- <section class="testimonial">
             <h3>Testimonials</h3>
             <div class="testimonial__card">
               <p>
@@ -153,33 +155,102 @@
               </p>
               <p class="testimonial__name"><span>- Carol ?. | Clarendon Hills, IL</span></p>
             </div>
-          </section>
+          </section> -->
+          <h3 class="testimonial">Testimonials</h3>
+          <div class="gallery js-flickity">
+            
+            <div class="gallery-cell">
+              <div class="testimonial__card">
+                <p>
+                  I bought an older home and I have been relying on Bob’s expertise
+                  as I update each room. He is very competent with attention to
+                  detail in every task. He jumps easily from installing blinds to
+                  making complicated home repairs.  I would recommend him to handle
+                  any household project.
+                </p>
+                <p class="testimonial__name"><span>- Jean H. | Clarendon Hills, IL</span></p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div class="testimonial__card">
+                <p>
+                  Bob has completed many projects in my home involving plumbing,
+                  tile work, carpentry all types of repairs and he is knowledgeable,
+                  skilled and meticulous in his work. He is conscientious,
+                  dependable and honest. I always call him for his expertise I
+                  highly recommend him.
+                </p>
+                <p class="testimonial__name"><span>- Diane H. | Westmont, IL</span></p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div class="testimonial__card">
+                <p>
+                  I have used Bob's handyman services many times over the past 10
+                  years. Work is done professionally and at a reasonable cost. Would
+                  highly recommend.
+                </p>
+                <p class="testimonial__name"><span>- Lori B. | ???, IL</span></p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div class="testimonial__card">
+                <p>
+                  So glad had the chance to meet Bob years ago, he have fixed and
+                  installed so many different repair and improvement for my house,
+                  he’s always on time and dependable experienced plus a very
+                  reasonable price. All the work done by him never needed repair
+                  again he’s my 911 for handyman!
+                </p>
+                <p class="testimonial__name"><span>- Alan | Oak Brook, IL</span></p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div class="testimonial__card">
+                <p>
+                  I think of Bob as a great handyman has done 40 yrs of good work
+                  for me with reasonable Estimates cant go wrong with Mr Bob!
+                </p>
+                <p class="testimonial__name"><span>- Carol ?. | Clarendon Hills, IL</span></p>
+              </div>
+            </div>
+          </div>
           <section class="service-area">
-            <h2>Service Provided to these Areas</h2>
-            <ul>
-              <li>Westmont & surrounding areas</li>
-              <li>Downer's Grove</li>
-              <li>Clarendon Hills</li>
-              <li>Darien</li>
-              <li>Oak Brook</li>
-            </ul>
+            <div class="wrapper">
+              <h2>Service Provided to these Areas</h2>
+              <ul>
+                <li>Westmont</li>
+                <li>Downer's Grove</li>
+                <li>Clarendon Hills</li>
+                <li>Darien</li>
+                <li>Oak Brook</li>
+              </ul>
+            </div>
           </section>
           <section class="contact">
             <h2>Contact</h2>
             <div class="contact__methods">
-              <a href="mailto:robertmikenas@gmail.com">
-                <i class="far fa-envelope"></i>
-                Email
-              </a>
-              <a href="tel:+17083417165">
-                <i class="fas fa-phone-alt"></i>
-                (708) 341-7165
-              </a>
+              <div>
+                <a href="mailto:robertmikenas@gmail.com">
+                  <i class="far fa-envelope"></i>
+                  Email Bob
+                </a>
+              </div>
+              <div>
+                <a href="tel:+17083417165">
+                  <i class="fas fa-phone-alt"></i>
+                  (708) 341-7165
+                </a>
+              </div>
           </section>
         </div>
     </main>
     <footer>
-      <p>&copy; Chris Grady - <a href="mailto:grittygrady@gmail.com">grittygrady@gmail.com</a> | <a href="https://github.com/grittygrady" target="_blank" referrerpolicy="noopener norefferer">Github</a></p>
+      <div>
+        <p>&copy; 2021 Chris Grady
+      </div>
+      <a href="mailto:grittygrady@gmail.com">grittygrady@gmail.com</a></p>
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
