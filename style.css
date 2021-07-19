@@ -55,14 +55,6 @@ img {
   width: 64em;
 }
 
-.testimonial {
-  border: 2px solid blue;
-}
-
-.testimonial__card {
-  border: 2px solid red;
-}
-
 /* UTILITY */
 .wrapper {
   max-width: 80%;
@@ -228,5 +220,33 @@ header {
 
 /* TESTIMONIAL */
 
+.testimonial {
+  margin-top: 2.5em;
+}
+
+.testimonial h3 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 2.05rem;
+  text-align: center;
+  color: var(--med-brwn);
+}
+
 .testimonial__card {
+  border-radius: 6.66px;
+  background-color: var(--med-brwn);
+  color: var(--light-white);
+  box-shadow: 2px 2px 2px var(--gold);
+  margin: 1em;
+  padding-bottom: 1.3em;
+}
+
+.testimonial__card > p {
+  font-size: 0.9rem;
+  padding: 1.3em 1.3em 0 1.3em;
+}
+
+.testimonial__name span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-style: italic;
 }
