@@ -52,7 +52,6 @@ img {
   --drk-grn: #132a13;
 }
 
-/* ***************TEMP************ */
 .hero-image {
   width: 64em;
 }
@@ -96,6 +95,20 @@ header {
   align-items: flex-end;
   width: 40%;
   padding: 0.75em 0.75em 0.75em 0;
+}
+
+.header__links a {
+  color: var(--light-white);
+  text-decoration: none;
+}
+.header__links a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.header__links a:visited {
+  color: var(--light-white);
+  text-decoration: none;
 }
 
 /* HERO */
@@ -170,10 +183,12 @@ header {
 }
 /* SERVICES */
 
-/* TODO: MAKE SERVICES INTO A UL */
-
 .services {
   padding: 1.5em 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 .services h2 {
@@ -185,7 +200,7 @@ header {
 }
 
 .services p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 1.2em;
 }
 
@@ -390,4 +405,28 @@ footer a {
 
 footer a:visited {
   color: var(--light-white);
+}
+
+/* TABLET QUERIES */
+
+@media (min-width: 768px) {
+  .header__title h1 {
+    font-size: 4rem;
+  }
+  .header__title h2 {
+    font-size: 2.2rem;
+  }
+  .header__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    padding: 1em 0 1em 2em;
+  }
+  .header__links {
+    padding: 0.75em 2em 0.75em 0;
+  }
+  .header__links a {
+    font-size: 1.8rem;
+  }
 }
