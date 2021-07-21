@@ -181,6 +181,7 @@ header {
 .cta p {
   font-size: 1.1rem;
   letter-spacing: -0.05em;
+  text-align: center;
 }
 /* SERVICES */
 
@@ -420,7 +421,7 @@ footer a:visited {
 
 /* TABLET QUERIES */
 
-@media (min-width: 768px) {
+@media (min-width: 650px) {
   .header__title h1 {
     font-size: 4rem;
   }
@@ -435,6 +436,9 @@ footer a:visited {
   }
   .header__links a {
     font-size: 1.8rem;
+  }
+  .header__links a:hover {
+    color: var(--gold);
   }
 
   .hero {
@@ -586,8 +590,66 @@ footer a:visited {
   footer a {
     padding: 0.3em 0;
   }
+}
 
-  footer a:visited {
-    color: var(--light-white);
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .header__title h1 {
+    font-size: 6rem;
+  }
+  .header__title h2 {
+    font-size: 3.3rem;
+  }
+  .header__title {
+    padding: 1em 0 1em 4.5em;
+  }
+  .header__links {
+    padding: 0.75em 4.5em 1.5em 0;
+  }
+  .header__links a {
+    font-size: 3rem;
+  }
+
+  .hero {
+    min-height: 600px;
+    border-bottom: 7px solid var(--med-grn);
+  }
+  .hero__text {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+  .intro {
+    font-size: 1.7rem;
+  }
+
+  .cta {
+    padding: 1.5em 0;
+    border-bottom: 7px solid var(--med-grn);
+  }
+
+  .cta h3 {
+    font-weight: 600;
+    margin-bottom: 0.6em;
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+  .cta p {
+    font-size: 1.8rem;
+    font-weight: bolder;
+  }
+
+  .services h2 {
+    font-size: 5rem;
+  }
+
+  .services p {
+    font-size: 1.8rem;
+    margin-bottom: 2em;
+    line-height: 1.4;
   }
 }
