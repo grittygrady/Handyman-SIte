@@ -385,6 +385,11 @@ header {
   color: var(--drk-grn);
 }
 
+.contact a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .contact__methods {
   padding-bottom: 1.5em;
 }
@@ -402,6 +407,11 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--light-white);
+}
+
+footer a:visited {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 footer a:visited {
@@ -552,6 +562,32 @@ footer a:visited {
     list-style-type: none;
     font-size: 1.6rem;
     width: 33%;
-    padding-top: 0.2em;
+    padding: 0.3em 0;
+  }
+
+  .contact h2 {
+    font-size: 4rem;
+  }
+
+  .contact a {
+    font-size: 2rem;
+    padding: 0.3em 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em 0;
+    align-items: center;
+    font-size: 0.8rem;
+    font-size: 1.3rem;
+  }
+
+  footer a {
+    padding: 0.3em 0;
+  }
+
+  footer a:visited {
+    color: var(--light-white);
   }
 }
